@@ -1,9 +1,9 @@
 # Site settings
 title: System-on-Chip Design & Verification
 author:
-  name: Michelle Lynch
-  email: your-email@domain.com
-description: "A blog."
+  name: Adam Nafea
+  email: g00462155@atu.ie
+description: "A blog for my SoC VGA project."
 
 # Build settings
 remote_theme: jekyll/minima
