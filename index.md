@@ -21,7 +21,7 @@ To start I used the files given for the colour stripes design as a base and crea
 
 Below is the sources for the I kept the same name as the original example our lecturer gave.
 
-<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/Irish.png?raw=true">
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/IrishFlagSource.png?raw=true">
 
 
 ## **Problems Encountered and Troubleshooting**
