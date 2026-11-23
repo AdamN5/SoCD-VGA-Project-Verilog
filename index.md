@@ -12,6 +12,8 @@ To start, I decided to go easy, and edit the template my lecturer gave us to mak
 
 ---
 
+<!-- Stripes Project -->
+
 ## **Template VGA Design**
 
 ### **Project Set-Up**
@@ -40,6 +42,70 @@ Synthesis turns the Verilog into a netlist of FPGA primitives such as LUTs, flip
 For the first demonstration I ran the unchanged template on the Basys3 and checked that the colour stripes were displayed correctly on the monitor.
 
 <img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/stripesmonitor.jpg?raw=true">
+
+<video width="600" height="400" controls>
+  <source src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/Scanner?raw=true" type="video/mov">
+</video>
+
+<!-- Irish Flag Project -->
+
+## **Template VGA Design**
+
+### **Project Set-Up**
+To start I used the files given for the colour stripes design as a base and created a new Vivado project called VGAIrishFlag, using the `xc7a35tcpg236-1` on the Basys3 board. Below is the project summary screenshot, followed by the project sources.
+
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/Irish.png?raw=true">
+
+Below is the sources for the I kept the same name as the original example our lecturer gave.
+
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/IrishFlagSources.png?raw=true">
+
+### **Template Code**
+The template is made up of four Verilog files. `VGATop.v` is the top-level module. `VGASync.v` generates the VGA timing. `VGAColourStripes.v` is the module that decides what colour each pixel is. `Testbench.v` drives the sync module with a clock and a reset so the timing signals can be checked in simulation.
+
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/IrishFlagMonitor.jpg?raw=true">
+
+### **Simulation**
+I simulated the design in the Vivado Simulator using the provided testbench. The testbench creates a clock with a 10 ns period and holds reset high for two clock edges before releasing it. 
+
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/SimIrishFlag.png?raw=true">
+
+### **Synthesis**
+Synthesis turns the Verilog into a netlist of FPGA primitives such as LUTs, flip-flops and the clock manager. After that I generated the bitstream and programmed the board over USB using the Hardware Manager.
+
+### **Demonstration**
+For the first demonstration I ran the unchanged template on the Basys3 and checked that the colour stripes were displayed correctly on the monitor.
+
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/IrishFlagMonitor.jpg?raw=true">
+
+<!-- Scanner Project -->
+
+## **Template VGA Design**
+
+### **Project Set-Up**
+To start I used the files given for the colour stripes design as a base and created a new Vivado project called VGAIrishFlag, using the `xc7a35tcpg236-1` on the Basys3 board. Below is the project summary screenshot, followed by the project sources.
+
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/?raw=true">
+
+Below is the sources for the I kept the same name as the original example our lecturer gave.
+
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/?raw=true">
+
+### **Template Code**
+The template is made up of four Verilog files. `VGATop.v` is the top-level module. `VGASync.v` generates the VGA timing. `VGAColourStripes.v` is the module that decides what colour each pixel is. `Testbench.v` drives the sync module with a clock and a reset so the timing signals can be checked in simulation.
+
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/?raw=true">
+
+### **Simulation**
+I simulated the design in the Vivado Simulator using the provided testbench. The testbench creates a clock with a 10 ns period and holds reset high for two clock edges before releasing it. 
+
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/?raw=true">
+
+### **Synthesis**
+Synthesis turns the Verilog into a netlist of FPGA primitives such as LUTs, flip-flops and the clock manager. After that I generated the bitstream and programmed the board over USB using the Hardware Manager.
+
+### **Demonstration**
+For the first demonstration I ran the unchanged template on the Basys3 and checked that the colour stripes were displayed correctly on the monitor.
 
 <video width="600" height="400" controls>
   <source src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/Scanner?raw=true" type="video/mov">
