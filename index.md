@@ -43,10 +43,6 @@ For the first demonstration I ran the unchanged template on the Basys3 and check
 
 <img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/stripesmonitor.jpg?raw=true">
 
-<video width="600" height="400" controls>
-  <source src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/Scanner?raw=true" type="video/mov">
-</video>
-
 <!-- Irish Flag Project -->
 
 ## **Template VGA Design**
@@ -108,7 +104,7 @@ Synthesis turns the Verilog into a netlist of FPGA primitives such as LUTs, flip
 For the first demonstration I ran the unchanged template on the Basys3 and checked that the colour stripes were displayed correctly on the monitor.
 
 <video width="600" height="400" controls>
-  <source src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/Scanner?raw=true" type="video/mov">
+  <source src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/Scanner.mp4?raw=true" type="video/mov">
 </video>
 
 ## **Problems Encountered and Troubleshooting**
