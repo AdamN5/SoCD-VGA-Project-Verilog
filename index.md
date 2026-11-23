@@ -31,7 +31,7 @@ The template is made up of four Verilog files. `VGATop.v` is the top-level modul
 ### **Simulation**
 I simulated the design in the Vivado Simulator using the provided testbench. The testbench creates a clock with a 10 ns period and holds reset high for two clock edges before releasing it. 
 
-<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/IrishFlagMonitor.jpg?raw=true">
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/SimIrishFlag.png?raw=true">
 
 ## **Problems Encountered and Troubleshooting**
 
