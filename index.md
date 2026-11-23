@@ -36,7 +36,3 @@ To fix it I created the IP again in the new project using the Clocking Wizard.
 
 #### **Faulty Basys3 boards**
 Over the course of the project I went through around three Basys3 boards that did not work properly. This made troubleshooting much harder as sometimes the demo would still work, because a board that shows nothing looks exactly like a design with a bug in it. I could not tell whether the fault was in my Verilog, the constraints, the clock wizard, a switch position or the board itself.
-
-To find out which was the cause, I used a process of elimination: first checking the simple things (power switch, USB cable, reset switch, monitor input and VGA cable), then checking whether Hardware Manager detected the board and programmed it successfully, and finally trying a known-good design, such as the unchanged template, on the same board. If a design that works on another board still shows nothing on this one, the board is the likely fault. I then swapped it for a working board. **[CONFIRM: adjust to what you actually did]**
-
-The lesson is to test a new board with the unchanged template before assuming your own code is wrong, which saves a lot of time. It also shows why simulation is so valuable: the waveforms proved my timing logic was correct even when the hardware gave no picture.
