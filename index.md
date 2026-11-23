@@ -41,6 +41,10 @@ For the first demonstration I ran the unchanged template on the Basys3 and check
 
 <img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/stripesmonitor.jpg?raw=true">
 
+<video width="600" height="400" controls>
+  <source src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/Scanner?raw=true" type="video/mov">
+</video>
+
 ## **Problems Encountered and Troubleshooting**
 
 ### **Reset switch left on**
