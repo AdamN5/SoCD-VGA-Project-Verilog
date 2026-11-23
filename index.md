@@ -33,6 +33,14 @@ I simulated the design in the Vivado Simulator using the provided testbench. The
 
 <img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/SimIrishFlag.png?raw=true">
 
+### **Synthesis**
+Synthesis turns the Verilog into a netlist of FPGA primitives such as LUTs, flip-flops and the clock manager. After that I generated the bitstream and programmed the board over USB using the Hardware Manager.
+
+### **Demonstration**
+For the first demonstration I ran the unchanged template on the Basys3 and checked that the colour stripes were displayed correctly on the monitor.
+
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/stripesmonitor.jpg?raw=true">
+
 ## **Problems Encountered and Troubleshooting**
 
 ### **Reset switch left on**
