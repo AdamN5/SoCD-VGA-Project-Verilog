@@ -69,8 +69,11 @@ Below is the sources for the I kept the same name as the original example our le
 To make the Irish flag I kept the name ColourStripes for the module from the pevious project as I wouldnt need to update any other file other than 'VGAColourStripes.v'. I only replaced the code for the colour logic.
 Replacing:
 <img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/StripesToIrish.png?raw=true">
+
 With:
+
 <img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/IrishFlagCode.png?raw=true">
+
 I changed it from eight 80 pixel columns to three coloumns 213 pixels wide with the middle coloumn (white) one pixel more, as 640 dosnt divide evenly.
 To get the proper colour I found the official RGB value then used an online converter to get the binary value.
 
