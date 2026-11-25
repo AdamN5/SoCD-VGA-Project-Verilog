@@ -28,6 +28,9 @@ Below is the sources for the for the project showing nothing changed.
 ### **Template Code**
 The template is made up of four Verilog files. `VGATop.v` is the top-level module. `VGASync.v` generates the VGA timing. `VGAColourStripes.v` is the module that decides what colour each pixel is. `Testbench.v` drives the sync module with a clock and a reset so the timing signals can be checked in simulation.
 
+### **Synthesis**
+Synthesis turns the Verilog into a netlist of FPGA primitives such as LUTs, flip-flops and the clock manager. After that I generated the bitstream and programmed the board over USB using the Hardware Manager.
+
 ### **Simulation**
 I simulated the design in the Vivado Simulator using the provided testbench. 
 
