@@ -102,32 +102,50 @@ Below is what is displayed on the monitor .
 
 <!-- Scanner Project -->
 
-## **Template VGA Design**
+## **Scanner VGA Design**
 
 ### **Project Set-Up**
-To start I used the files given for the colour stripes design as a base and created a new Vivado project called VGAIrishFlag, using the `xc7a35tcpg236-1` on the Basys3 board. Below is the project summary screenshot, followed by the project sources.
+I got inspiration for the scanner design from the 1982 TV show 'Knight Rider', it features one of the main characters which is a car called KITT.
+Image below shows the front scanner on KITT from the TV show:
 
-<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/?raw=true">
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/KnightRiderKitt?raw=true">
 
-Below is the sources for the I kept the same name as the original example our lecturer gave.
+To start this project I based it on the original files from the previous projects changing only 'VGAColourStripes.v' but keeping the module name so I didnt have to edit any additional files.
+Image below is the project summary and source files.
 
-<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/?raw=true">
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/KittScannerSummary?raw=true">
 
-### **Template Code**
-The template is made up of four Verilog files. `VGATop.v` is the top-level module. `VGASync.v` generates the VGA timing. `VGAColourStripes.v` is the module that decides what colour each pixel is. `Testbench.v` drives the sync module with a clock and a reset so the timing signals can be checked in simulation.
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/KittScannerSources?raw=true">
 
-<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/?raw=true">
+
+
+
+
+
+
+
+### **Code Adaptation**
+To adapt the code I kept the templates ColourStripes module name and its structure for next-state logic, output registers and reset. The original template used col and didnt move so to make the bar move I used three registers, 'laser_x' which holds the left side of bar, 'dir' which holds the direction(1 for going right and 0 for going left), and 'counter' which slows the movement down.
+
+The counter counts clock cycles and every 'DIV'
+
 
 ### **Simulation**
-I simulated the design in the Vivado Simulator using the provided testbench. The testbench creates a clock with a 10 ns period and holds reset high for two clock edges before releasing it. 
-
+I simulated the design in the Vivado Simulator using the provided testbench.
 <img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/?raw=true">
 
+
+
+
+
+
+
+
 ### **Demonstration**
-For the first demonstration I ran the unchanged template on the Basys3 and checked that the colour stripes were displayed correctly on the monitor.
+For the first demonstration I took a video of monitor running the design, below is the video.
 
 <video width="600" height="400" controls>
-  <source src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/Scanner.mp4?raw=true" type="video/mov">
+  <source src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/KittScannerDemo.mp4?raw=true" type="video/mp4">
 </video>
 
 ## **Problems Encountered and Troubleshooting**
