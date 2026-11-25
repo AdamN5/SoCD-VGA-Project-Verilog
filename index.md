@@ -77,7 +77,13 @@ To get the proper colour I found the official RGB value then used an online conv
 ### **Simulation**
 I simulated the design in the Vivado Simulator using the provided testbench.
 
-<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/SimIrishFlag.png?raw=true">
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/IrishFlagSim.png?raw=true">
+
+| Band | col range | Time in simulation | red | green | blue | Colour |
+|:----:|:-----------:|:------------------:|:---:|:-----:|:----:|--------|
+| 1 | 0 to 212 | 0 to 2.13 µs | 1 | 9 | 6 | Green |
+| 2 | 213 to 426 | 2.13 to 4.27 µs | 15 | 15 | 15 | White |
+| 3 | 427 to 639 | 4.27 to 6.4 µs | 15 | 8 | 3 | Orange |
 
 ### **Demonstration**
 Below is what is displayed on the monitor .
