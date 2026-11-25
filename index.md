@@ -47,7 +47,7 @@ I simulated the design in the Vivado Simulator using the provided testbench.
 ### **Demonstration**
 For the first demonstration I ran the unchanged template on the Basys3 and checked that the colour stripes were displayed correctly on the monitor.
 
-<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/StripesMonitor.jpg?raw=true">
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/StripesMonitor.png?raw=true">
 
 
 
