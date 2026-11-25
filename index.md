@@ -19,22 +19,20 @@ To start, I decided to go easy, and edit the template my lecturer gave us to mak
 ### **Project Set-Up**
 To start Im just going to show off the unchnaged project summary of the coloured stripes project that was given to us. You can see we are using the `xc7a35tcpg236-1` part for the Basys 3 board.
 
-<img src="?raw=true">
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/StripesSummary.png?raw=true">
 
 Below is the sources for the for the project showing nothing changed.
 
-<img src="?raw=true">
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/StripesSources.png?raw=true">
 
 ### **Template Code**
 The template is made up of four Verilog files. `VGATop.v` is the top-level module. `VGASync.v` generates the VGA timing. `VGAColourStripes.v` is the module that decides what colour each pixel is. `Testbench.v` drives the sync module with a clock and a reset so the timing signals can be checked in simulation.
 
-<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/IrishFlagMonitor.jpg?raw=true">
-
 ### **Simulation**
 I simulated the design in the Vivado Simulator using the provided testbench. 
 
-| Stripe | `col` range | Time in simulation | red | green | blue | Colour |
-|:------:|:-----------:|:------------------:|:---:|:-----:|:----:|--------|
+| Stripe | col range | Time in simulation | red | green | blue | Colour |
+|:------:|:-----------:|:----------------:|:---:|:-----:|:----:|-------|
 | 1 | 0 to 79 | 0 to 0.8 µs | 0 | 0 | 0 | Black |
 | 2 | 80 to 159 | 0.8 to 1.6 µs | 0 | 0 | 15 | Blue |
 | 3 | 160 to 239 | 1.6 to 2.4 µs | 0 | 15 | 0 | Green |
@@ -46,13 +44,10 @@ I simulated the design in the Vivado Simulator using the provided testbench.
 
 <img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/StripesSim.png?raw=true">
 
-### **Synthesis**
-Synthesis turns the Verilog into a netlist of FPGA primitives such as LUTs, flip-flops and the clock manager. After that I generated the bitstream and programmed the board over USB using the Hardware Manager.
-
 ### **Demonstration**
 For the first demonstration I ran the unchanged template on the Basys3 and checked that the colour stripes were displayed correctly on the monitor.
 
-<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/stripesmonitor.jpg?raw=true">
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/StripesMonitor.jpg?raw=true">
 
 
 
@@ -84,13 +79,15 @@ I simulated the design in the Vivado Simulator using the provided testbench. The
 
 <img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/SimIrishFlag.png?raw=true">
 
-### **Synthesis**
-Synthesis turns the Verilog into a netlist of FPGA primitives such as LUTs, flip-flops and the clock manager. After that I generated the bitstream and programmed the board over USB using the Hardware Manager.
-
 ### **Demonstration**
 For the first demonstration I ran the unchanged template on the Basys3 and checked that the colour stripes were displayed correctly on the monitor.
 
 <img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/IrishFlagMonitor.jpg?raw=true">
+
+
+
+
+
 
 <!-- Scanner Project -->
 
@@ -114,9 +111,6 @@ The template is made up of four Verilog files. `VGATop.v` is the top-level modul
 I simulated the design in the Vivado Simulator using the provided testbench. The testbench creates a clock with a 10 ns period and holds reset high for two clock edges before releasing it. 
 
 <img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/?raw=true">
-
-### **Synthesis**
-Synthesis turns the Verilog into a netlist of FPGA primitives such as LUTs, flip-flops and the clock manager. After that I generated the bitstream and programmed the board over USB using the Hardware Manager.
 
 ### **Demonstration**
 For the first demonstration I ran the unchanged template on the Basys3 and checked that the colour stripes were displayed correctly on the monitor.
