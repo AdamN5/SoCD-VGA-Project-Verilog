@@ -52,13 +52,6 @@ For the first demonstration I ran the unchanged template on the Basys3 and check
 
 <img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/StripesMonitor.png?raw=true">
 
-
-
-
-
-
-
-
 <!-- Irish Flag Project -->
 
 ## **Irish FLag VGA Design**
@@ -66,7 +59,7 @@ For the first demonstration I ran the unchanged template on the Basys3 and check
 ### **Project Set-Up**
 To start I used the files given for the colour stripes design as a base and saved the previous project as VGAIrishFlag. Below is the project summary screenshot.
 
-<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/Irish.png?raw=true">
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/IrishFlagSummary.png?raw=true">
 
 Below is the sources for the I kept the same name as the original example our lecturer gave.
 
@@ -87,9 +80,10 @@ I simulated the design in the Vivado Simulator using the provided testbench.
 <img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/SimIrishFlag.png?raw=true">
 
 ### **Demonstration**
-For the first demonstration I ran the unchanged template on the Basys3 and checked that the colour stripes were displayed correctly on the monitor.
+Below is what is displayed on the monitor .
 
 <img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/IrishFlagMonitor.jpg?raw=true">
+
 
 
 
