@@ -117,32 +117,36 @@ Image below is the project summary and source files.
 
 <img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/KittScannerSources?raw=true">
 
-
-
-
-
-
-
-
 ### **Code Adaptation**
 To adapt the code I kept the templates ColourStripes module name and its structure for next-state logic, output registers and reset. The original template used col and didnt move so to make the bar move I used three registers, 'laser_x' which holds the left side of bar, 'dir' which holds the direction(1 for going right and 0 for going left), and 'counter' which slows the movement down.
 
-The counter counts clock cycles and every 'DIV'
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/Code1?raw=true">
 
+The counter counts clock cycles and every 'DIV' cycles the bar moves one pixel. I decided on the number 80000 for DIV through trial and error figuring out what gave a speed that looked good on the monitor.
+When 'laser_x' reaches 559 it flips the direction as the bar is 80 pixels long, it also will flip when it reaches the left edge.
+
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/Code2?raw=true">
+
+
+For the deisgn of the laser I chose the colour red with blue and green always being 0 and for the logic 'row' and  'coloumn' are checked against the bars postion. The bar is 20 pixels tall and the main middle section is 40 pixels wide and is bright red while either side is 20 pixels wide and a dim red, This is meant to imitate a glow effect.
+
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/Code3?raw=true">
 
 ### **Simulation**
 I simulated the design in the Vivado Simulator using the provided testbench.
-<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/?raw=true">
+
+Below shows the simulation of the scanner, 'red' goes dim then bright then dim again. It repeats on every row because its 20 rows tall.
+
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/Sim1?raw=true">
 
 
+Below is the simulation of the scanner with 'DIV' set to 20 to show the steps cleaer and easier. Showing the 
 
 
-
-
-
+<img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/Sim2?raw=true">
 
 ### **Demonstration**
-For the first demonstration I took a video of monitor running the design, below is the video.
+For the demonstration I took a video of monitor running the design, below is the video.
 
 <video width="600" height="400" controls>
   <source src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/KittScannerDemo.mp4?raw=true" type="video/mp4">
