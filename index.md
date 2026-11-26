@@ -140,8 +140,7 @@ Below shows the simulation of the scanner, 'red' goes dim then bright then dim a
 <img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/Sim1?raw=true">
 
 
-Below is the simulation of the scanner with 'DIV' set to 20 to show the steps cleaer and easier. Showing the 
-
+Below is the simulation of the scanner with 'DIV' set to 20 to show the steps cleaer and easier. Showing that 'laser_x' goes from 0 pixels to 560 pixels then 'dir' flips and 'laser_x' reverses.
 
 <img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/Sim2?raw=true">
 
