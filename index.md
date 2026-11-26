@@ -138,7 +138,7 @@ Below is the simulation of the scanner with 'DIV' set to 20 to show the steps cl
 <img src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/Sim2.png?raw=true">
 
 ### **Demonstration**
-For the demonstration I took a video of monitor running the design, below is the video.
+For the demonstration I took a video of monitor running the design and just to note I changed the monitors aspect ratio to 4:3 which is why the scanner dosnt touch the edges in the video as the monitor is a wider screen, below is the video.
 
 <video width="600" controls muted playsinline>
   <source src="https://github.com/AdamN5/SoCD-VGA-Project-Verilog/blob/main/docs/assets/images/KittScannerDemo.mp4?raw=true" type="video/mp4">
